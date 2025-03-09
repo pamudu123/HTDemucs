@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <!-- Boxes for each model -->
+  <rect x="100" y="100" width="150" height="100" rx="10" ry="10" fill="#e6f3ff" stroke="#0066cc" stroke-width="2"/>
+  <rect x="325" y="100" width="150" height="100" rx="10" ry="10" fill="#e6f9ff" stroke="#00a3cc" stroke-width="2"/>
+  <rect x="535" y="100" width="180" height="100" rx="10" ry="10" fill="#e6fffc" stroke="#00ccb9" stroke-width="2"/>
+  
+  <!-- Arrows connecting boxes -->
+  <path d="M 250 150 L 325 150" stroke="#666666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 475 150 L 530 150" stroke="#666666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Text labels for each box -->
+  <text x="175" y="150" text-anchor="middle" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold">Demucs</text>
+  
+  <text x="400" y="150" text-anchor="middle" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold">Hybrid Demucs</text>
+  
+  <text x="625" y="130" text-anchor="middle" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold">Hybrid Transformer</text>
+  <text x="625" y="155" text-anchor="middle" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold">Demucs</text>
+  <text x="625" y="180" text-anchor="middle" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="15" font-style="italic">(HT Demucs)</text>
+  
+  <!-- Arrow definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666666"/>
+    </marker>
+  </defs>
+</svg>

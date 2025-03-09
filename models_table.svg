@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650">
+  <!-- Table styles -->
+  <style>
+    .header { font-weight: bold; fill: #333; font-size: 14px; }
+    .cell { font-size: 13px; fill: #333; }
+    .highlight { fill: #ffff99; }
+    .bold { font-weight: bold; }
+    .arrow { fill: #ff0000; }
+  </style>
+  
+  <!-- Table header -->
+  <rect x="0" y="0" width="900" height="40" fill="#e6e6e6" />
+  
+  <!-- Column headers -->
+  <text x="220" y="25" class="header" text-anchor="middle">Model</text>
+  <text x="420" y="25" class="header" text-anchor="middle">Extra Training Data</text>
+  <text x="530" y="25" class="header" text-anchor="middle">Overall</text>
+  <text x="610" y="25" class="header" text-anchor="middle">Drums</text>
+  <text x="680" y="25" class="header" text-anchor="middle">Bass</text>
+  <text x="750" y="25" class="header" text-anchor="middle">Other</text>
+  <text x="830" y="25" class="header" text-anchor="middle">Vocals</text>
+  
+  <!-- Table grid lines -->
+  <line x1="0" y1="40" x2="900" y2="40" stroke="#000" stroke-width="1" />
+  
+  <!-- Table rows -->
+  <!-- IRM Oracle -->
+  <rect x="0" y="40" width="900" height="40" fill="#f9f9f9" />
+  <text x="220" y="65" class="cell" text-anchor="middle">IRM Oracle (Ideal Reference Model)</text>
+  <text x="420" y="65" class="cell" text-anchor="middle">No</text>
+  <text x="530" y="65" class="cell bold" text-anchor="middle">8.22</text>
+  <text x="610" y="65" class="cell" text-anchor="middle">8.45</text>
+  <text x="680" y="65" class="cell" text-anchor="middle">7.12</text>
+  <text x="750" y="65" class="cell" text-anchor="middle">7.85</text>
+  <text x="830" y="65" class="cell" text-anchor="middle">9.43</text>
+  
+  <!-- KUIELAB-MDX-Net -->
+  <rect x="0" y="80" width="900" height="40" fill="#ffffff" />
+  <text x="220" y="105" class="cell" text-anchor="middle">KUIELAB-MDX-Net</text>
+  <text x="420" y="105" class="cell" text-anchor="middle">No</text>
+  <text x="530" y="105" class="cell" text-anchor="middle">7.54</text>
+  <text x="610" y="105" class="cell" text-anchor="middle">7.33</text>
+  <text x="680" y="105" class="cell" text-anchor="middle">7.86</text>
+  <text x="750" y="105" class="cell" text-anchor="middle">5.95</text>
+  <text x="830" y="105" class="cell" text-anchor="middle">9.00</text>
+  
+  <!-- Hybrid Demucs (Original) -->
+  <rect x="0" y="120" width="900" height="40" fill="#f9f9f9" />
+  <text x="220" y="145" class="cell" text-anchor="middle">Hybrid Demucs (Original)</text>
+  <text x="420" y="145" class="cell" text-anchor="middle">No</text>
+  <text x="530" y="145" class="cell" text-anchor="middle">7.64</text>
+  <text x="610" y="145" class="cell" text-anchor="middle">8.12</text>
+  <text x="680" y="145" class="cell" text-anchor="middle">8.43</text>
+  <text x="750" y="145" class="cell" text-anchor="middle">5.65</text>
+  <text x="830" y="145" class="cell" text-anchor="middle">8.35</text>
+  
+  <!-- Band-Split RNN -->
+  <rect x="0" y="160" width="900" height="40" fill="#ffffff" />
+  <text x="220" y="185" class="cell" text-anchor="middle">Band-Split RNN</text>
+  <text x="420" y="185" class="cell" text-anchor="middle">No</text>
+  <text x="530" y="185" class="cell" text-anchor="middle">8.24</text>
+  <text x="610" y="185" class="cell" text-anchor="middle">9.01</text>
+  <text x="680" y="185" class="cell" text-anchor="middle">7.22</text>
+  <text x="750" y="185" class="cell" text-anchor="middle">6.70</text>
+  <text x="830" y="185" class="cell" text-anchor="middle">10.01</text>
+  
+  <!-- HT Demucs (ours) -->
+  <rect x="0" y="200" width="900" height="40" fill="#f9f9f9" />
+  <text x="220" y="225" class="cell" text-anchor="middle">HT Demucs (ours)</text>
+  <text x="420" y="225" class="cell" text-anchor="middle">No</text>
+  <text x="530" y="225" class="cell" text-anchor="middle">7.52</text>
+  <text x="610" y="225" class="cell" text-anchor="middle">7.94</text>
+  <text x="680" y="225" class="cell" text-anchor="middle">8.48</text>
+  <text x="750" y="225" class="cell" text-anchor="middle">5.72</text>
+  <text x="830" y="225" class="cell" text-anchor="middle">7.93</text>
+  
+  <!-- Spleeter -->
+  <rect x="0" y="240" width="900" height="40" fill="#ffffff" />
+  <text x="220" y="265" class="cell" text-anchor="middle">Spleeter</text>
+  <text x="420" y="265" class="cell" text-anchor="middle"> (25,000 songs)</text>
+  <text x="530" y="265" class="cell" text-anchor="middle">5.91</text>
+  <text x="610" y="265" class="cell" text-anchor="middle">6.71</text>
+  <text x="680" y="265" class="cell" text-anchor="middle">5.51</text>
+  <text x="750" y="265" class="cell" text-anchor="middle">4.55</text>
+  <text x="830" y="265" class="cell" text-anchor="middle">6.86</text>
+  
+  <!-- D3Net -->
+  <rect x="0" y="280" width="900" height="40" fill="#f9f9f9" />
+  <text x="220" y="305" class="cell" text-anchor="middle">D3Net</text>
+  <text x="420" y="305" class="cell" text-anchor="middle"> (1,500 songs)</text>
+  <text x="530" y="305" class="cell" text-anchor="middle">6.68</text>
+  <text x="610" y="305" class="cell" text-anchor="middle">7.36</text>
+  <text x="680" y="305" class="cell" text-anchor="middle">6.20</text>
+  <text x="750" y="305" class="cell" text-anchor="middle">5.37</text>
+  <text x="830" y="305" class="cell" text-anchor="middle">7.80</text>
+  
+  <!-- Demucs v2 -->
+  <rect x="0" y="320" width="900" height="40" fill="#ffffff" />
+  <text x="220" y="345" class="cell bold" text-anchor="middle">Demucs v2</text>
+  <text x="420" y="345" class="cell" text-anchor="middle"> (150 songs)</text>
+  <text x="530" y="345" class="cell" text-anchor="middle">6.79</text>
+  <text x="610" y="345" class="cell" text-anchor="middle">7.58</text>
+  <text x="680" y="345" class="cell" text-anchor="middle">7.60</text>
+  <text x="750" y="345" class="cell" text-anchor="middle">4.69</text>
+  <text x="830" y="345" class="cell" text-anchor="middle">7.29</text>
+  
+  <!-- Hybrid Demucs (Retrained) -->
+  <rect x="0" y="360" width="900" height="40" fill="#f9f9f9" />
+  <text x="220" y="385" class="cell bold" text-anchor="middle">Hybrid Demucs (Retrained)</text>
+  <text x="420" y="385" class="cell" text-anchor="middle"> (800 songs)</text>
+  <text x="530" y="385" class="cell" text-anchor="middle">8.34</text>
+  <text x="610" y="385" class="cell" text-anchor="middle">9.31</text>
+  <text x="680" y="385" class="cell" text-anchor="middle">9.13</text>
+  <text x="750" y="385" class="cell" text-anchor="middle">6.18</text>
+  <text x="830" y="385" class="cell" text-anchor="middle">8.75</text>
+  
+  <!-- Band-Split RNN (Latest Version) -->
+  <rect x="0" y="400" width="900" height="40" fill="#ffffff" />
+  <text x="220" y="425" class="cell" text-anchor="middle">Band-Split RNN (Latest Version)</text>
+  <text x="420" y="425" class="cell" text-anchor="middle"> (1,750 extra songs)</text>
+  <text x="530" y="425" class="cell" text-anchor="middle">8.97</text>
+  <text x="610" y="425" class="cell" text-anchor="middle">10.15</text>
+  <text x="680" y="425" class="cell" text-anchor="middle">8.16</text>
+  <text x="750" y="425" class="cell" text-anchor="middle">7.08</text>
+  <text x="830" y="425" class="cell" text-anchor="middle">10.47</text>
+  
+  <!-- HT Demucs (Ours) -->
+  <rect x="0" y="440" width="900" height="40" fill="#f9f9f9" />
+  <text x="220" y="465" class="cell bold" text-anchor="middle">HT Demucs (Ours)</text>
+  <text x="420" y="465" class="cell" text-anchor="middle"> (150 songs)</text>
+  <text x="530" y="465" class="cell" text-anchor="middle">8.49</text>
+  <text x="610" y="465" class="cell" text-anchor="middle">9.51</text>
+  <text x="680" y="465" class="cell" text-anchor="middle">9.76</text>
+  <text x="750" y="465" class="cell" text-anchor="middle">6.13</text>
+  <text x="830" y="465" class="cell" text-anchor="middle">8.56</text>
+  
+  <!-- HT Demucs (Ours, trained on 800 songs) -->
+  <rect x="0" y="480" width="900" height="40" fill="#ffffff" />
+  <text x="220" y="505" class="cell bold" text-anchor="middle">HT Demucs (Ours, trained on 800 songs)</text>
+  <text x="420" y="505" class="cell" text-anchor="middle"> (800 songs)</text>
+  <text x="530" y="505" class="cell" text-anchor="middle">8.80</text>
+  <text x="610" y="505" class="cell" text-anchor="middle">10.05</text>
+  <text x="680" y="505" class="cell" text-anchor="middle">9.78</text>
+  <text x="750" y="505" class="cell" text-anchor="middle">6.42</text>
+  <text x="830" y="505" class="cell" text-anchor="middle">8.93</text>
+  
+  <!-- HT Demucs (Fine-Tuned) -->
+  <rect x="0" y="520" width="900" height="40" fill="#f9f9f9" />
+  <rect x="520" y="520" width="50" height="40" fill="#ffff99" /> <!-- Highlight cell -->
+  <text x="220" y="545" class="cell bold" text-anchor="middle">HT Demucs (Fine-Tuned)</text>
+  <text x="420" y="545" class="cell" text-anchor="middle"> (800 songs)</text>
+  <text x="530" y="545" class="cell bold" text-anchor="middle">9.00</text>
+  <text x="610" y="545" class="cell" text-anchor="middle">10.08</text>
+  <text x="680" y="545" class="cell" text-anchor="middle">10.39</text>
+  <text x="750" y="545" class="cell" text-anchor="middle">6.32</text>
+  <text x="830" y="545" class="cell" text-anchor="middle">9.20</text>
+  
+  <!-- Sparse HT Demucs (Fine-Tuned + Sparse Attention) -->
+  <rect x="0" y="560" width="900" height="40" fill="#ffffff" />
+  <rect x="520" y="560" width="50" height="40" fill="#ffff99" /> <!-- Highlight cell -->
+  <rect x="600" y="560" width="50" height="40" fill="#ffff99" /> <!-- Highlight cell -->
+  <rect x="670" y="560" width="50" height="40" fill="#ffff99" /> <!-- Highlight cell -->
+  <rect x="740" y="560" width="50" height="40" fill="#ffff99" /> <!-- Highlight cell -->
+  <rect x="820" y="560" width="50" height="40" fill="#ffff99" /> <!-- Highlight cell -->
+  <text x="220" y="585" class="cell bold" text-anchor="middle">Sparse HT Demucs (Fine-Tuned + Sparse Attention)</text>
+  <text x="420" y="585" class="cell" text-anchor="middle"> (800 songs)</text>
+  <text x="530" y="585" class="cell bold" text-anchor="middle">9.20</text>
+  <text x="610" y="585" class="cell bold" text-anchor="middle">10.83</text>
+  <text x="680" y="585" class="cell bold" text-anchor="middle">10.47</text>
+  <text x="750" y="585" class="cell bold" text-anchor="middle">6.41</text>
+  <text x="830" y="585" class="cell bold" text-anchor="middle">9.37</text>
+  
+  <!-- Arrows pointing to best performance -->
+  <path d="M530 605 L530 590 L540 600 L520 600 Z" class="arrow" />
+  <path d="M610 605 L610 590 L620 600 L600 600 Z" class="arrow" />
+  <path d="M680 605 L680 590 L690 600 L670 600 Z" class="arrow" />
+  <path d="M750 605 L750 590 L760 600 L740 600 Z" class="arrow" />
+  <path d="M830 605 L830 590 L840 600 L820 600 Z" class="arrow" />
+  
+  <!-- Legend -->
+  <!-- <rect x="20" y="610" width="15" height="15" fill="#ffff99" />
+  <text x="45" y="622" class="cell">Highlighted values (best performance)</text>
+  <path d="M130 635 L130 620 L140 630 L120 630 Z" class="arrow" />
+  <text x="150" y="635" class="cell">Indicates best score in category</text> -->
+</svg>

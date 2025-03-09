@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#ffffff" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <!-- <text x="400" y="50" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" font-weight="bold">Experimental Setup for Audio Source Separation</text> -->
+  
+  <!-- Hardware Section -->
+  <rect x="50" y="90" width="650" height="120" fill="#e9ecef" rx="8" ry="8" stroke="#ced4da" stroke-width="2"/>
+  <text x="400" y="115" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold">Hardware Configuration</text>
+  
+  <!-- GPU Visualization -->
+  <g transform="translate(100, 140)">
+    <rect width="530" height="50" fill="#dee2e6" rx="5" ry="5" stroke="#adb5bd" stroke-width="1"/>
+    
+    <!-- 8 GPUs -->
+    <g>
+      <rect x="10" y="10" width="55" height="30" fill="#4361ee" rx="3" ry="3"/>
+      <text x="37.5" y="30" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="white">32 GB</text>
+      
+      <rect x="75" y="10" width="55" height="30" fill="#4361ee" rx="3" ry="3"/>
+      <text x="102.5" y="30" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="white">32 GB</text>
+      
+      <rect x="140" y="10" width="55" height="30" fill="#4361ee" rx="3" ry="3"/>
+      <text x="167.5" y="30" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="white">32 GB</text>
+      
+      <rect x="205" y="10" width="55" height="30" fill="#4361ee" rx="3" ry="3"/>
+      <text x="232.5" y="30" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="white">32 GB</text>
+      
+      <rect x="270" y="10" width="55" height="30" fill="#4361ee" rx="3" ry="3"/>
+      <text x="297.5" y="30" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="white">32 GB</text>
+      
+      <rect x="335" y="10" width="55" height="30" fill="#4361ee" rx="3" ry="3"/>
+      <text x="362.5" y="30" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="white">32 GB</text>
+      
+      <rect x="400" y="10" width="55" height="30" fill="#4361ee" rx="3" ry="3"/>
+      <text x="427.5" y="30" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="white">32 GB</text>
+      
+      <rect x="465" y="10" width="55" height="30" fill="#4361ee" rx="3" ry="3"/>
+      <text x="492.5" y="30" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="white">32 GB</text>
+    </g>
+    
+    <!-- GPU Memory annotation -->
+    <text x="250" y="65" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">8x NVIDIA V100 GPUs</text>
+  </g>
+  
+  <!-- Training Parameters Section -->
+  <rect x="50" y="230" width="650" height="160" fill="#e9ecef" rx="8" ry="8" stroke="#ced4da" stroke-width="2"/>
+  <text x="400" y="255" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold">Training Parameters</text>
+  
+  <!-- Parameters -->
+  <g transform="translate(100, 280)">
+    <!-- Loss Function -->
+    <rect x="0" y="0" width="150" height="40" fill="#4cc9f0" rx="5" ry="5"/>
+    <text x="75" y="25" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">L1 Loss</text>
+    
+    <!-- Optimizer -->
+    <rect x="180" y="0" width="150" height="40" fill="#4895ef" rx="5" ry="5"/>
+    <text x="255" y="25" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">Adam Optimizer</text>
+    
+    <!-- Learning Rate -->
+    <rect x="360" y="0" width="150" height="40" fill="#3f72af" rx="5" ry="5"/>
+    <text x="435" y="25" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">LR: 3×10⁻⁴</text>
+    
+    <!-- Batch Size -->
+    <rect x="0" y="60" width="150" height="40" fill="#3a0ca3" rx="5" ry="5"/>
+    <text x="75" y="85" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">Batch Size: 32</text>
+    
+    <!-- Training Duration -->
+    <rect x="180" y="60" width="330" height="40" fill="#560bad" rx="5" ry="5"/>
+    <text x="345" y="85" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">1200 Epochs × 800 Batches per Epoch</text>
+  </g>
+  
+  <!-- Dataset Section -->
+  <rect x="50" y="410" width="650" height="160" fill="#e9ecef" rx="8" ry="8" stroke="#ced4da" stroke-width="2"/>
+  <text x="400" y="435" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold">Dataset Configuration</text>
+  
+  <!-- Dataset Visualization -->
+  <g transform="translate(100, 460)">
+    <!-- MUSDB18-HQ -->
+    <rect x="0" y="0" width="250" height="60" fill="#f72585" rx="5" ry="5"/>
+    <text x="125" y="25" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">MUSDB18-HQ Dataset</text>
+    <text x="125" y="45" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Professional Multitrack Recordings</text>
+    
+    <!-- Plus sign -->
+    <text x="270" y="35" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">+</text>
+    
+    <!-- Custom Dataset -->
+    <rect x="300" y="0" width="250" height="60" fill="#b5179e" rx="5" ry="5"/>
+    <text x="425" y="25" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">Custom 800 Songs Dataset</text>
+    <text x="425" y="45" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Curated Collection</text>
+    
+    <!-- Audio Properties -->
+    <rect x="0" y="70" width="550" height="30" fill="#7209b7" rx="5" ry="5"/>
+    <text x="275" y="90" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">44.1kHz Sampling Rate, Stereo Audio</text>
+  </g>
+</svg>

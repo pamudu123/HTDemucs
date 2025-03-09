@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 630">
+  <!-- Background -->
+  <rect width="800" height="630" fill="#ffffff" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Dataset Curation &amp; Preprocessing for Hybrid Transformer Demucs</text>
+  
+  <!-- Step 1: Initial Dataset -->
+  <rect x="60" y="80" width="680" height="80" rx="5" ry="5" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+  <text x="400" y="110" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#0d47a1">Initial Dataset</text>
+  <text x="400" y="140" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">3500 songs from 200 artists across diverse genres</text>
+  
+  <!-- Arrowhead marker definition (moved up for proper reference) -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+  
+  <!-- Arrow -->
+  <path d="M400 160 L400 190" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 2: Manual Verification -->
+  <rect x="60" y="190" width="680" height="80" rx="5" ry="5" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
+  <text x="400" y="220" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1b5e20">Manual Verification</text>
+  <text x="400" y="250" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">150 tracks manually verified; ambiguous stems discarded</text>
+  
+  <!-- Arrow -->
+  <path d="M400 270 L400 300" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 3: Non-Silence Filter -->
+  <rect x="60" y="300" width="680" height="80" rx="5" ry="5" fill="#fff3e0" stroke="#ff9800" stroke-width="2"/>
+  <text x="400" y="330" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#e65100">Non-Silence Filter</text>
+  <text x="400" y="360" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Retain stems only if all 4 sources are non-silent &gt;30% of the time</text>
+  
+  <!-- Arrow -->
+  <path d="M400 380 L400 410" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 4: Separation & Volume Measurement -->
+  <rect x="60" y="410" width="680" height="80" rx="5" ry="5" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2"/>
+  <text x="400" y="440" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#4a148c">Separation & Volume Measurement</text>
+  <text x="400" y="470" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Volume computed as V(z)=10log(AveragePool(z²))</text>
+  
+  <!-- Arrow -->
+  <path d="M400 490 L400 520" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 5: Quality Matrix & Filtering -->
+  <rect x="60" y="520" width="680" height="80" rx="5" ry="5" fill="#ffebee" stroke="#f44336" stroke-width="2"/>
+  <text x="400" y="550" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#b71c1c">Quality Matrix & Filtering</text>
+  <text x="400" y="580" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Final dataset: 800 high-quality songs (Pᵢᵢ&gt;70%, Pᵢⱼ&lt;30%)</text>
+  
+  <!-- Count Indicators -->
+  <g transform="translate(680, 150)">
+    <circle cx="0" cy="0" r="30" fill="#2196f3" opacity="0.8"/>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">3500</text>
+  </g>
+  
+  <g transform="translate(680, 260)">
+    <circle cx="0" cy="0" r="25" fill="#4caf50" opacity="0.8"/>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">~2500</text>
+  </g>
+  
+  <g transform="translate(680, 370)">
+    <circle cx="0" cy="0" r="22" fill="#ff9800" opacity="0.8"/>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">~1500</text>
+  </g>
+  
+  <g transform="translate(680, 480)">
+    <circle cx="0" cy="0" r="20" fill="#9c27b0" opacity="0.8"/>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">~1000</text>
+  </g>
+  
+  <g transform="translate(680, 590)">
+    <circle cx="0" cy="0" r="18" fill="#f44336" opacity="0.8"/>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">800</text>
+  </g>
+</svg>

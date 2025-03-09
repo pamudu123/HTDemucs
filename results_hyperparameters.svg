@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420">
+  <!-- Background and border -->
+  <rect width="600" height="420" fill="white" stroke="black" stroke-width="1"/>
+  
+  <!-- Table Headers -->
+  <line x1="50" y1="50" x2="550" y2="50" stroke="black" stroke-width="2"/>
+  <text x="80" y="35" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">dur. (sec)</text>
+  <text x="160" y="35" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">depth</text>
+  <text x="240" y="35" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">dim.</text>
+  <text x="320" y="35" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">nb. param.</text>
+  <text x="400" y="35" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">RTF (cpu)</text>
+  <text x="480" y="35" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">SDR (All)</text>
+  
+  <!-- Duration Group 3.4 -->
+  <line x1="50" y1="90" x2="550" y2="90" stroke="black" stroke-width="1"/>
+  <rect x="50" y="50" width="60" height="120" fill="#E8F4F8" fill-opacity="0.5"/>
+  <text x="80" y="70" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">3.4</text>
+  
+  <!-- Row 1 - Depth 5 -->
+  <rect x="130" y="50" width="60" height="40" fill="#FFECB3" fill-opacity="0.4" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="160" y="70" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">5</text>
+  <text x="240" y="70" font-family="Arial" font-size="14" text-anchor="middle">384</text>
+  <text x="320" y="70" font-family="Arial" font-size="14" text-anchor="middle">26.9M</text>
+  <text x="400" y="70" font-family="Arial" font-size="14" text-anchor="middle">1.02</text>
+  <text x="480" y="70" font-family="Arial" font-size="14" text-anchor="middle">8.17</text>
+  
+  <!-- Row 2 - Depth 7 -->
+  <rect x="130" y="90" width="60" height="40" fill="#E6D0FF" fill-opacity="0.4" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="160" y="110" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">7</text>
+  <text x="240" y="110" font-family="Arial" font-size="14" text-anchor="middle">384</text>
+  <text x="320" y="110" font-family="Arial" font-size="14" text-anchor="middle">34.0M</text>
+  <text x="400" y="110" font-family="Arial" font-size="14" text-anchor="middle">1.23</text>
+  <text x="480" y="110" font-family="Arial" font-size="14" text-anchor="middle">8.26</text>
+  
+  <!-- Depth change arrow -->
+  <path d="M 160 80 L 160 90" stroke="#4CAF50" stroke-width="2"/>
+  <path d="M 160 90 L 155 85 L 160 95 L 165 85 Z" fill="#4CAF50"/>
+  
+  <!-- Row 3 - Depth 5 -->
+  <rect x="130" y="130" width="60" height="40" fill="#FFECB3" fill-opacity="0.4" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="160" y="150" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">5</text>
+  <text x="240" y="150" font-family="Arial" font-size="14" text-anchor="middle">512</text>
+  <text x="320" y="150" font-family="Arial" font-size="14" text-anchor="middle">41.4M</text>
+  <text x="400" y="150" font-family="Arial" font-size="14" text-anchor="middle">1.30</text>
+  <text x="480" y="150" font-family="Arial" font-size="14" text-anchor="middle">8.12</text>
+  
+  <!-- Depth change arrow -->
+  <path d="M 160 120 L 160 130" stroke="#4CAF50" stroke-width="2"/>
+  <path d="M 160 130 L 155 125 L 160 135 L 165 125 Z" fill="#4CAF50"/>
+  
+  <!-- Duration Group 7.8 with highlight -->
+  <line x1="50" y1="170" x2="550" y2="170" stroke="black" stroke-width="1"/>
+  <rect x="50" y="170" width="60" height="120" fill="#FFF2CC" fill-opacity="0.7"/>
+  <text x="80" y="190" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">7.8</text>
+  
+  <!-- Arrow indicating change from 3.4 to 7.8 -->
+  <path d="M 80 155 L 80 165" stroke="#FF6347" stroke-width="2"/>
+  <path d="M 80 165 L 75 160 L 80 170 L 85 160 Z" fill="#FF6347"/>
+  
+  <!-- Row 4 - Depth 5 -->
+  <rect x="130" y="170" width="60" height="40" fill="#FFECB3" fill-opacity="0.4" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="160" y="190" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">5</text>
+  <text x="240" y="190" font-family="Arial" font-size="14" text-anchor="middle">384</text>
+  <text x="320" y="190" font-family="Arial" font-size="14" text-anchor="middle">26.9M</text>
+  <text x="400" y="190" font-family="Arial" font-size="14" text-anchor="middle">1.49</text>
+  <text x="480" y="190" font-family="Arial" font-size="14" text-anchor="middle">8.70</text>
+  
+  <!-- Row 5 - Depth 7 -->
+  <rect x="130" y="210" width="60" height="40" fill="#E6D0FF" fill-opacity="0.4" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="160" y="230" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">7</text>
+  <text x="240" y="230" font-family="Arial" font-size="14" text-anchor="middle">384</text>
+  <text x="320" y="230" font-family="Arial" font-size="14" text-anchor="middle">34.0M</text>
+  <text x="400" y="230" font-family="Arial" font-size="14" text-anchor="middle">1.68</text>
+  <text x="480" y="230" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">OOM</text>
+  
+  <!-- Depth change arrow -->
+  <path d="M 160 200 L 160 210" stroke="#4CAF50" stroke-width="2"/>
+  <path d="M 160 210 L 155 205 L 160 215 L 165 205 Z" fill="#4CAF50"/>
+  
+  <!-- Row 6 - Depth 5 - Highlight best score -->
+  <rect x="130" y="250" width="60" height="40" fill="#FFECB3" fill-opacity="0.4" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="160" y="270" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">5</text>
+  <text x="240" y="270" font-family="Arial" font-size="14" text-anchor="middle">512</text>
+  <text x="320" y="270" font-family="Arial" font-size="14" text-anchor="middle">41.4M</text>
+  <text x="400" y="270" font-family="Arial" font-size="14" text-anchor="middle">1.77</text>
+  <rect x="450" y="255" width="60" height="30" fill="#D5F5E3" rx="5" ry="5"/>
+  <text x="480" y="270" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">8.80</text>
+  
+  <!-- Depth change arrow -->
+  <path d="M 160 240 L 160 250" stroke="#4CAF50" stroke-width="2"/>
+  <path d="M 160 250 L 155 245 L 160 255 L 165 245 Z" fill="#4CAF50"/>
+  
+  <!-- Duration Group 12.2 -->
+  <line x1="50" y1="290" x2="550" y2="290" stroke="black" stroke-width="1"/>
+  <rect x="50" y="290" width="60" height="60" fill="#F5E8F4" fill-opacity="0.5"/>
+  <text x="80" y="310" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">12.2</text>
+  
+  <!-- Arrow indicating change from 7.8 to 12.2 -->
+  <path d="M 80 275 L 80 285" stroke="#FF6347" stroke-width="2"/>
+  <path d="M 80 285 L 75 280 L 80 290 L 85 280 Z" fill="#FF6347"/>
+  
+  <!-- Row 7 - Depth 5 -->
+  <rect x="130" y="290" width="60" height="60" fill="#FFECB3" fill-opacity="0.4" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="160" y="310" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">5</text>
+  <text x="240" y="310" font-family="Arial" font-size="14" text-anchor="middle">384</text>
+  <text x="320" y="310" font-family="Arial" font-size="14" text-anchor="middle">26.9M</text>
+  <text x="400" y="310" font-family="Arial" font-size="14" text-anchor="middle">2.04</text>
+  <text x="480" y="310" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">OOM</text>
+  
+  <!-- Bottom border -->
+  <line x1="50" y1="350" x2="550" y2="350" stroke="black" stroke-width="2"/>
+  
+  <!-- Legend -->
+  <rect x="50" y="360" width="15" height="15" fill="#E8F4F8" fill-opacity="0.5" stroke="black" stroke-width="1"/>
+  <text x="70" y="372" font-family="Arial" font-size="12" text-anchor="start">Duration: 3.4 sec</text>
+  
+  <rect x="170" y="360" width="15" height="15" fill="#FFF2CC" fill-opacity="0.7" stroke="black" stroke-width="1"/>
+  <text x="190" y="372" font-family="Arial" font-size="12" text-anchor="start">Duration: 7.8 sec</text>
+  
+  <rect x="290" y="360" width="15" height="15" fill="#F5E8F4" fill-opacity="0.5" stroke="black" stroke-width="1"/>
+  <text x="310" y="372" font-family="Arial" font-size="12" text-anchor="start">Duration: 12.2 sec</text>
+  
+  <rect x="410" y="360" width="15" height="15" fill="#D5F5E3" rx="3" ry="3" stroke="black" stroke-width="1"/>
+  <text x="430" y="372" font-family="Arial" font-size="12" text-anchor="start">Best SDR score</text>
+  
+  <rect x="50" y="380" width="15" height="15" fill="#FFECB3" fill-opacity="0.4" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="70" y="392" font-family="Arial" font-size="12" text-anchor="start">Depth: 5</text>
+  
+  <rect x="170" y="380" width="15" height="15" fill="#E6D0FF" fill-opacity="0.4" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="190" y="392" font-family="Arial" font-size="12" text-anchor="start">Depth: 7</text>
+  
+  <path d="M 290 385 L 300 385" stroke="#FF6347" stroke-width="2"/>
+  <path d="M 300 385 L 295 380 L 305 385 L 295 390 Z" fill="#FF6347"/>
+  <text x="310" y="392" font-family="Arial" font-size="12" text-anchor="start">Duration change</text>
+  
+  <path d="M 410 385 L 420 385" stroke="#4CAF50" stroke-width="2"/>
+  <path d="M 420 385 L 415 380 L 425 385 L 415 390 Z" fill="#4CAF50"/>
+  <text x="430" y="392" font-family="Arial" font-size="12" text-anchor="start">Depth change</text>
+  
+  <text x="300" y="412" font-family="Arial" font-size="12" text-anchor="start">OOM = Out of Memory</text>
+</svg>

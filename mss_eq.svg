@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Background rectangle -->
+  <rect width="800" height="400" fill="#ffffff" rx="10" ry="10" />
+  
+  <!-- Main equation -->
+  <text x="260" y="80" font-family="Arial, sans-serif," font-size="20" fill="#333333">Mathematically</text>
+  <text x="400" y="120" font-family="'Times New Roman', serif" font-size="28" text-anchor="middle" fill="#000000">
+    y(t) = <tspan font-size="32">∑</tspan><tspan dy="-12" font-size="16">N</tspan><tspan dy="12" dx="-16" font-size="16">n=1</tspan><tspan dx="10" font-size="28">x</tspan><tspan dy="8" font-size="16">n</tspan><tspan dy="-8" font-size="28">(t)</tspan>
+  </text>
+  
+  <!-- Horizontal line -->
+  <!-- <line x1="200" y1="150" x2="600" y2="150" stroke="#666666" stroke-width="1" /> -->
+  
+  <!-- Definition list -->
+  <text x="250" y="180" font-family="Arial, sans-serif," font-size="18" fill="#333333">• y(t) represents the observed mixture signal</text>
+  <text x="250" y="220" font-family="Arial, sans-serif," font-size="18" fill="#333333">• x<tspan dy="4" font-size="12">n</tspan><tspan dy="-4">(t) represents the n-th source signal</tspan></text>
+  <text x="250" y="260" font-family="Arial, sans-serif," font-size="18" fill="#333333">• N is the total number of source signals</text>
+</svg>

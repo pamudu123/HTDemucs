@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 280">
+  <!-- Background and border -->
+  <rect width="600" height="280" fill="white" stroke="black" stroke-width="1"/>
+  
+  <!-- Table Headers -->
+  <line x1="50" y1="50" x2="550" y2="50" stroke="black" stroke-width="2"/>
+  <text x="80" y="35" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">dur. (sec)</text>
+  <text x="160" y="35" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">depth</text>
+  <text x="240" y="35" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">remixing</text>
+  <text x="320" y="35" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">repitching</text>
+  <text x="400" y="35" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">SDR (All)</text>
+  
+  <!-- Duration Group 7.8 -->
+  <rect x="50" y="50" width="60" height="120" fill="#FFF2CC" fill-opacity="0.7"/>
+  <text x="80" y="80" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">7.8</text>
+  <text x="80" y="120" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">7.8</text>
+  <text x="80" y="160" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">7.8</text>
+  
+  <!-- Depth column -->
+  <rect x="110" y="50" width="60" height="120" fill="#FFECB3" fill-opacity="0.4"/>
+  <text x="140" y="80" font-family="Arial" font-size="14" text-anchor="middle">5</text>
+  <text x="140" y="120" font-family="Arial" font-size="14" text-anchor="middle">5</text>
+  <text x="140" y="160" font-family="Arial" font-size="14" text-anchor="middle">5</text>
+  
+  <!-- Remixing column -->
+  <rect x="170" y="50" width="80" height="40" fill="#D5F5E3" fill-opacity="0.7"/>
+  <text x="210" y="80" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">✓</text>
+  
+  <rect x="170" y="90" width="80" height="40" fill="#D5F5E3" fill-opacity="0.7"/>
+  <text x="210" y="120" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">✓</text>
+  
+  <rect x="170" y="130" width="80" height="40" fill="#FFCDD2" fill-opacity="0.7"/>
+  <text x="210" y="160" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">✗</text>
+  
+  <!-- Repitching column -->
+  <rect x="250" y="50" width="80" height="40" fill="#D5F5E3" fill-opacity="0.7"/>
+  <text x="290" y="80" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">✓</text>
+  
+  <rect x="250" y="90" width="80" height="40" fill="#FFCDD2" fill-opacity="0.7"/>
+  <text x="290" y="120" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">✗</text>
+  
+  <rect x="250" y="130" width="80" height="40" fill="#D5F5E3" fill-opacity="0.7"/>
+  <text x="290" y="160" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">✓</text>
+  
+  <!-- SDR column with score bars -->
+  <rect x="330" y="50" width="170" height="120" fill="#F9F9F9"/>
+  
+  <!-- SDR Score Row 1 -->
+  <text x="400" y="80" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">8.70</text>
+  <rect x="440" y="70" width="50" height="20" fill="#4CAF50" fill-opacity="0.7" rx="3" ry="3"/>
+  
+  <!-- SDR Score Row 2 -->
+  <text x="400" y="120" font-family="Arial" font-size="14" text-anchor="middle">8.65</text>
+  <rect x="440" y="110" width="48" height="20" fill="#8BC34A" fill-opacity="0.7" rx="3" ry="3"/>
+  
+  <!-- SDR Score Row 3 -->
+  <text x="400" y="160" font-family="Arial" font-size="14" text-anchor="middle">8.00</text>
+  <rect x="440" y="150" width="40" height="20" fill="#FFC107" fill-opacity="0.7" rx="3" ry="3"/>
+  
+  <!-- Horizontal lines -->
+  <line x1="50" y1="90" x2="550" y2="90" stroke="black" stroke-width="1"/>
+  <line x1="50" y1="130" x2="550" y2="130" stroke="black" stroke-width="1"/>
+  <line x1="50" y1="170" x2="550" y2="170" stroke="black" stroke-width="2"/>
+  
+  <!-- Legend -->
+  <text x="50" y="200" font-family="Arial" font-size="14" font-weight="bold">Configuration Performance:</text>
+  
+  <rect x="50" y="215" width="20" height="20" fill="#D5F5E3" fill-opacity="0.7"/>
+  <text x="75" y="230" font-family="Arial" font-size="14" text-anchor="start">Enabled (✓)</text>
+  
+  <rect x="200" y="215" width="20" height="20" fill="#FFCDD2" fill-opacity="0.7"/>
+  <text x="225" y="230" font-family="Arial" font-size="14" text-anchor="start">Disabled (✗)</text>
+  
+  <!-- <rect x="350" y="215" width="20" height="20" fill="#FFF2CC" fill-opacity="0.7"/> -->
+  <!-- <text x="375" y="230" font-family="Arial" font-size="14" text-anchor="start">Duration: 7.8 sec</text> -->
+  
+  <!-- SDR Score Scale -->
+  <!-- <text x="50" y="260" font-family="Arial" font-size="14" font-weight="bold">SDR Score:</text> -->
+  
+  <!-- <rect x="50" y="270" width="50" height="15" fill="#4CAF50" fill-opacity="0.7" rx="3" ry="3"/> -->
+  <!-- <text x="110" y="282" font-family="Arial" font-size="12" text-anchor="start">High (8.70)</text> -->
+  
+  <!-- <rect x="180" y="270" width="48" height="15" fill="#8BC34A" fill-opacity="0.7" rx="3" ry="3"/> -->
+  <!-- <text x="238" y="282" font-family="Arial" font-size="12" text-anchor="start">Medium (8.65)</text> -->
+  
+  <!-- <rect x="330" y="270" width="40" height="15" fill="#FFC107" fill-opacity="0.7" rx="3" ry="3"/> -->
+  <!-- <text x="380" y="282" font-family="Arial" font-size="12" text-anchor="start">Low (8.00)</text> -->
+  
+  <!-- Analysis Note -->
+  <!-- <text x="300" y="310" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Best performance: Both remixing and repitching enabled (8.70)</text> -->
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#ffffff" rx="5" ry="5"/>
+  
+  <!-- Title -->
+  <text x="200" y="40" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">Signal-to-Distortion Ratio (SDR)</text>
+  
+  <!-- Low SDR -->
+  <text x="100" y="80" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#e74c3c">Low SDR</text>
+  <!-- Original wave -->
+  <path d="M50,110 C60,100 70,120 80,110 C90,100 100,120 110,110 C120,100 130,120 140,110 C150,100 160,120 170,110" stroke="#3498db" stroke-width="2.5" fill="none"/>
+  <!-- Distorted wave -->
+  <path d="M50,110 C58,95 70,125 75,115 C88,92 100,128 115,105 C122,102 135,117 145,122 C152,95 160,125 170,110" stroke="#e74c3c" stroke-width="1.5" fill="none" stroke-dasharray="2,1"/>
+  
+  <!-- High SDR -->
+  <text x="300" y="80" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#27ae60">High SDR</text>
+  <!-- Original wave -->
+  <path d="M250,110 C260,100 270,120 280,110 C290,100 300,120 310,110 C320,100 330,120 340,110 C350,100 360,120 370,110" stroke="#3498db" stroke-width="2.5" fill="none"/>
+  <!-- Good quality separated wave -->
+  <path d="M250,110 C260,101 270,119 280,110 C290,101 300,119 310,110 C320,101 330,119 340,110 C350,101 360,119 370,110" stroke="#27ae60" stroke-width="1.5" fill="none" stroke-dasharray="2,1"/>
+  
+  <!-- Arrow -->
+  <line x1="100" y1="170" x2="300" y2="170" stroke="#666" stroke-width="2"/>
+  <polygon points="300,170 290,165 290,175" fill="#666"/>
+  <text x="200" y="190" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#666">Higher SDR = Better Quality</text>
+  
+  <!-- Legend -->
+  <line x1="130" y1="230" x2="160" y2="230" stroke="#3498db" stroke-width="2.5"/>
+  <text x="163" y="235" font-family="Arial, sans-serif" font-size="12" fill="#333">Original Signal</text>
+  
+  <line x1="130" y1="260" x2="160" y2="260" stroke="#666" stroke-width="1.5" stroke-dasharray="2,1"/>
+  <text x="163" y="265" font-family="Arial, sans-serif" font-size="12" fill="#333">Separated Signal</text>
+</svg>

@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#ffffff" />
+  
+  <!-- Modified Legend - Single Line -->
+  <rect x="180" y="80" width="20" height="20" fill="#3498db" rx="2" ry="2" opacity="0.7" />
+  <text x="210" y="95" font-family="Arial" font-size="14">Chunk 1</text>
+  
+  <rect x="320" y="80" width="20" height="20" fill="#e74c3c" rx="2" ry="2" opacity="0.7" />
+  <text x="350" y="95" font-family="Arial" font-size="14">Chunk 2</text>
+  
+  <rect x="460" y="80" width="20" height="20" fill="#f1c40f" rx="2" ry="2" opacity="0.7" />
+  <text x="490" y="95" font-family="Arial" font-size="14">Overlap Region</text>
+  
+  <rect x="640" y="80" width="20" height="20" fill="#000000" rx="2" ry="2" opacity="0.15" />
+  <text x="670" y="95" font-family="Arial" font-size="14">Linear Transition</text>
+  
+  <!-- Stage 1: Original continuous audio -->
+  <text x="120" y="155" font-family="Arial" font-size="16" text-anchor="middle">Original</text>
+  <text x="120" y="185" font-family="Arial" font-size="16" text-anchor="middle">Audio</text>
+  
+  <rect x="180" y="150" width="540" height="40" fill="#888" rx="3" ry="3" />
+  <!-- Waveform representation -->
+  <path d="M 180 170 C 200 160, 220 180, 240 170 C 260 160, 280 180, 300 170 C 320 160, 340 180, 360 170 C 380 160, 400 180, 420 170 C 440 160, 460 180, 480 170 C 500 160, 520 180, 540 170 C 560 160, 580 180, 600 170 C 620 160, 640 180, 660 170 C 680 160, 700 180, 720 170" 
+        fill="none" stroke="white" stroke-width="2" />
+  
+  <!-- Stage 2: Divided into fixed-length chunks -->
+  <text x="120" y="265" font-family="Arial" font-size="16" text-anchor="middle">Fixed-length</text>
+  <text x="120" y="285" font-family="Arial" font-size="16" text-anchor="middle">Chunks</text>
+  
+  <rect x="180" y="250" width="180" height="40" fill="#3498db" rx="3" ry="3" opacity="0.7" />
+  <rect x="360" y="250" width="180" height="40" fill="#e74c3c" rx="3" ry="3" opacity="0.7" />
+  <rect x="540" y="250" width="180" height="40" fill="#2ecc71" rx="3" ry="3" opacity="0.7" />
+  
+  <line x1="180" y1="300" x2="720" y2="300" stroke="#000" stroke-width="1" />
+  <line x1="180" y1="300" x2="180" y2="305" stroke="#000" stroke-width="1" />
+  <line x1="360" y1="300" x2="360" y2="305" stroke="#000" stroke-width="1" />
+  <line x1="540" y1="300" x2="540" y2="305" stroke="#000" stroke-width="1" />
+  <line x1="720" y1="300" x2="720" y2="305" stroke="#000" stroke-width="1" />
+  
+  <text x="180" y="320" font-family="Arial" font-size="12" text-anchor="middle">0</text>
+  <text x="360" y="320" font-family="Arial" font-size="12" text-anchor="middle">T</text>
+  <text x="540" y="320" font-family="Arial" font-size="12" text-anchor="middle">2T</text>
+  <text x="720" y="320" font-family="Arial" font-size="12" text-anchor="middle">3T</text>
+  
+  <!-- Stage 3: Chunks with 25% overlap -->
+  <text x="120" y="395" font-family="Arial" font-size="16" text-anchor="middle">25%</text>
+  <text x="120" y="415" font-family="Arial" font-size="16" text-anchor="middle">Overlap</text>
+  
+  <rect x="180" y="380" width="180" height="40" fill="#3498db" rx="3" ry="3" opacity="0.7" />
+  <rect x="315" y="380" width="180" height="40" fill="#e74c3c" rx="3" ry="3" opacity="0.7" />
+  <rect x="450" y="380" width="180" height="40" fill="#2ecc71" rx="3" ry="3" opacity="0.7" />
+  <rect x="585" y="380" width="135" height="40" fill="#9b59b6" rx="3" ry="3" opacity="0.7" />
+  
+  <!-- Overlap regions highlighted -->
+  <rect x="315" y="380" width="45" height="40" fill="#f1c40f" rx="0" ry="0" opacity="0.7" />
+  <rect x="450" y="380" width="45" height="40" fill="#f1c40f" rx="0" ry="0" opacity="0.7" />
+  <rect x="585" y="380" width="45" height="40" fill="#f1c40f" rx="0" ry="0" opacity="0.7" />
+  
+  <text x="337.5" y="430" font-family="Arial" font-size="12" text-anchor="middle">25% of T</text>
+  <text x="472.5" y="430" font-family="Arial" font-size="12" text-anchor="middle">25% of T</text>
+  <text x="607.5" y="430" font-family="Arial" font-size="12" text-anchor="middle">25% of T</text>
+  
+  <line x1="180" y1="450" x2="720" y2="450" stroke="#000" stroke-width="1" />
+  <line x1="180" y1="450" x2="180" y2="455" stroke="#000" stroke-width="1" />
+  <line x1="315" y1="450" x2="315" y2="455" stroke="#000" stroke-width="1" />
+  <line x1="360" y1="450" x2="360" y2="455" stroke="#000" stroke-width="1" />
+  <line x1="450" y1="450" x2="450" y2="455" stroke="#000" stroke-width="1" />
+  <line x1="495" y1="450" x2="495" y2="455" stroke="#000" stroke-width="1" />
+  <line x1="540" y1="450" x2="540" y2="455" stroke="#000" stroke-width="1" />
+  <line x1="585" y1="450" x2="585" y2="455" stroke="#000" stroke-width="1" />
+  <line x1="630" y1="450" x2="630" y2="455" stroke="#000" stroke-width="1" />
+  <line x1="720" y1="450" x2="720" y2="455" stroke="#000" stroke-width="1" />
+  
+  <!-- Stage 4: Linear transition in overlap regions -->
+  <text x="120" y="525" font-family="Arial" font-size="16" text-anchor="middle">Linear</text>
+  <text x="120" y="545" font-family="Arial" font-size="16" text-anchor="middle">Transition</text>
+  
+  <rect x="180" y="510" width="180" height="40" fill="#3498db" rx="3" ry="3" opacity="0.7" />
+  <rect x="315" y="510" width="180" height="40" fill="#e74c3c" rx="3" ry="3" opacity="0.7" />
+  <rect x="450" y="510" width="180" height="40" fill="#2ecc71" rx="3" ry="3" opacity="0.7" />
+  <rect x="585" y="510" width="135" height="40" fill="#9b59b6" rx="3" ry="3" opacity="0.7" />
+  
+  <!-- Linear fade transition in overlap regions -->
+  <defs>
+    <linearGradient id="fade1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e74c3c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="fade2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2ecc71;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="fade3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9b59b6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect x="315" y="510" width="45" height="40" fill="url(#fade1)" rx="0" ry="0" />
+  <rect x="450" y="510" width="45" height="40" fill="url(#fade2)" rx="0" ry="0" />
+  <rect x="585" y="510" width="45" height="40" fill="url(#fade3)" rx="0" ry="0" />
+  
+  <!-- Linear transition arrows and labels -->
+  <path d="M 337.5 560 L 337.5 580" stroke="#333" stroke-width="1.5" />
+  <polygon points="337.5,580 332.5,570 342.5,570" fill="#333" />
+  <text x="337.5" y="595" font-family="Arial" font-size="12" text-anchor="middle">Linear crossfade</text>
+  
+  <path d="M 472.5 560 L 472.5 580" stroke="#333" stroke-width="1.5" />
+  <polygon points="472.5,580 467.5,570 477.5,570" fill="#333" />
+  <text x="472.5" y="595" font-family="Arial" font-size="12" text-anchor="middle">Linear crossfade</text>
+  
+  <path d="M 607.5 560 L 607.5 580" stroke="#333" stroke-width="1.5" />
+  <polygon points="607.5,580 602.5,570 612.5,570" fill="#333" />
+  <text x="607.5" y="595" font-family="Arial" font-size="12" text-anchor="middle">Linear crossfade</text>
+</svg>

@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650">
+  <!-- Background -->
+  <rect width="900" height="650" fill="#ffffff" />
+  
+  <!-- Title -->
+  <!-- <text x="450" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Music Source Separation Model Performance</text> -->
+  
+  <!-- Legend -->
+  <rect x="680" y="65" width="200" height="100" fill="white" stroke="#ddd" rx="3" />
+  <text x="780" y="85" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <rect x="700" y="95" width="15" height="15" fill="#4285f4" />
+  <text x="725" y="108" font-family="Arial" font-size="12" dominant-baseline="middle">No Extra Training</text>
+  
+  <rect x="700" y="120" width="15" height="15" fill="#34a853" />
+  <text x="725" y="133" font-family="Arial" font-size="12" dominant-baseline="middle">≤ 800 songs</text>
+  
+  <rect x="700" y="145" width="15" height="15" fill="#fbbc05" />
+  <text x="725" y="158" font-family="Arial" font-size="12" dominant-baseline="middle">≥ 1,500 songs</text>
+  
+  <circle cx="740" y="108" r="7" fill="none" stroke="#e94235" stroke-width="2" />
+  <!-- <text x="755" y="108" font-family="Arial" font-size="12" dominant-baseline="middle">Top Score</text> -->
+  
+  <!-- Axis Labels -->
+  <text x="450" y="625" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">SDR Score (Higher is Better)</text>
+  
+  <!-- Y-axis labels (model names) -->
+  <text x="65" y="100" font-family="Arial" font-size="11" text-anchor="end" dominant-baseline="middle">IRM Oracle</text>
+  <text x="65" y="135" font-family="Arial" font-size="11" text-anchor="end" dominant-baseline="middle">KUIELAB-MDX-Net</text>
+  <text x="65" y="170" font-family="Arial" font-size="11" text-anchor="end" dominant-baseline="middle">Hybrid Demucs (Original)</text>
+  <text x="65" y="205" font-family="Arial" font-size="11" text-anchor="end" dominant-baseline="middle">Band-Split RNN</text>
+  <text x="65" y="240" font-family="Arial" font-size="11" text-anchor="end" dominant-baseline="middle">HT Demucs (ours)</text>
+  <text x="65" y="275" font-family="Arial" font-size="11" text-anchor="end" dominant-baseline="middle">Spleeter</text>
+  <text x="65" y="310" font-family="Arial" font-size="11" text-anchor="end" dominant-baseline="middle">D3Net</text>
+  <text x="65" y="345" font-family="Arial" font-size="11" text-anchor="end" dominant-baseline="middle">Demucs v2</text>
+  <text x="65" y="380" font-family="Arial" font-size="11" text-anchor="end" dominant-baseline="middle">Hybrid Demucs (Retrained)</text>
+  <text x="65" y="415" font-family="Arial" font-size="11" text-anchor="end" dominant-baseline="middle">Band-Split RNN (Latest)</text>
+  <text x="65" y="450" font-family="Arial" font-size="11" text-anchor="end" dominant-baseline="middle">HT Demucs (Ours) 150</text>
+  <text x="65" y="485" font-family="Arial" font-size="11" text-anchor="end" dominant-baseline="middle">HT Demucs (Ours, 800)</text>
+  <text x="65" y="520" font-family="Arial" font-size="11" text-anchor="end" dominant-baseline="middle">HT Demucs (Fine-Tuned)</text>
+  <text x="65" y="555" font-family="Arial" font-size="11" text-anchor="end" dominant-baseline="middle">Sparse HT Demucs</text>
+  
+  <!-- X-axis ticks and values -->
+  <line x1="80" y1="585" x2="80" y2="590" stroke="#333" stroke-width="1" />
+  <text x="80" y="605" font-family="Arial" font-size="12" text-anchor="middle">5.0</text>
+  
+  <line x1="162" y1="585" x2="162" y2="590" stroke="#333" stroke-width="1" />
+  <text x="162" y="605" font-family="Arial" font-size="12" text-anchor="middle">5.5</text>
+  
+  <line x1="244" y1="585" x2="244" y2="590" stroke="#333" stroke-width="1" />
+  <text x="244" y="605" font-family="Arial" font-size="12" text-anchor="middle">6.0</text>
+  
+  <line x1="326" y1="585" x2="326" y2="590" stroke="#333" stroke-width="1" />
+  <text x="326" y="605" font-family="Arial" font-size="12" text-anchor="middle">6.5</text>
+  
+  <line x1="408" y1="585" x2="408" y2="590" stroke="#333" stroke-width="1" />
+  <text x="408" y="605" font-family="Arial" font-size="12" text-anchor="middle">7.0</text>
+  
+  <line x1="490" y1="585" x2="490" y2="590" stroke="#333" stroke-width="1" />
+  <text x="490" y="605" font-family="Arial" font-size="12" text-anchor="middle">7.5</text>
+  
+  <line x1="572" y1="585" x2="572" y2="590" stroke="#333" stroke-width="1" />
+  <text x="572" y="605" font-family="Arial" font-size="12" text-anchor="middle">8.0</text>
+  
+  <line x1="654" y1="585" x2="654" y2="590" stroke="#333" stroke-width="1" />
+  <text x="654" y="605" font-family="Arial" font-size="12" text-anchor="middle">8.5</text>
+  
+  <line x1="736" y1="585" x2="736" y2="590" stroke="#333" stroke-width="1" />
+  <text x="736" y="605" font-family="Arial" font-size="12" text-anchor="middle">9.0</text>
+  
+  <line x1="818" y1="585" x2="818" y2="590" stroke="#333" stroke-width="1" />
+  <text x="818" y="605" font-family="Arial" font-size="12" text-anchor="middle">9.5</text>
+  
+  <!-- X-axis -->
+  <line x1="80" y1="585" x2="820" y2="585" stroke="#333" stroke-width="2" />
+  
+  <!-- SDR Bars -->
+  <!-- IRM Oracle -->
+  <rect x="80" y="90" width="328" height="20" fill="#4285f4" rx="2" />
+  <text x="417" y="100" font-family="Arial" font-size="12" font-weight="bold" dominant-baseline="middle">8.22</text>
+  
+  <!-- KUIELAB-MDX-Net -->
+  <rect x="80" y="125" width="252" height="20" fill="#4285f4" rx="2" />
+  <text x="341" y="135" font-family="Arial" font-size="12" font-weight="bold" dominant-baseline="middle">7.54</text>
+  
+  <!-- Hybrid Demucs (Original) -->
+  <rect x="80" y="160" width="262" height="20" fill="#4285f4" rx="2" />
+  <text x="351" y="170" font-family="Arial" font-size="12" font-weight="bold" dominant-baseline="middle">7.64</text>
+  
+  <!-- Band-Split RNN -->
+  <rect x="80" y="195" width="329" height="20" fill="#4285f4" rx="2" />
+  <text x="418" y="205" font-family="Arial" font-size="12" font-weight="bold" dominant-baseline="middle">8.24</text>
+  
+  <!-- HT Demucs (ours) -->
+  <rect x="80" y="230" width="251" height="20" fill="#4285f4" rx="2" />
+  <text x="340" y="240" font-family="Arial" font-size="12" font-weight="bold" dominant-baseline="middle">7.52</text>
+  
+  <!-- Spleeter -->
+  <rect x="80" y="265" width="91" height="20" fill="#fbbc05" rx="2" />
+  <text x="180" y="275" font-family="Arial" font-size="12" font-weight="bold" dominant-baseline="middle">5.91</text>
+  
+  <!-- D3Net -->
+  <rect x="80" y="300" width="168" height="20" fill="#fbbc05" rx="2" />
+  <text x="257" y="310" font-family="Arial" font-size="12" font-weight="bold" dominant-baseline="middle">6.68</text>
+  
+  <!-- Demucs v2 -->
+  <rect x="80" y="335" width="179" height="20" fill="#34a853" rx="2" />
+  <text x="269" y="345" font-family="Arial" font-size="12" font-weight="bold" dominant-baseline="middle">6.79</text>
+  
+  <!-- Hybrid Demucs (Retrained) -->
+  <rect x="80" y="370" width="336" height="20" fill="#34a853" rx="2" />
+  <text x="426" y="380" font-family="Arial" font-size="12" font-weight="bold" dominant-baseline="middle">8.34</text>
+  
+  <!-- Band-Split RNN (Latest Version) -->
+  <rect x="80" y="405" width="370" height="20" fill="#fbbc05" rx="2" />
+  <text x="459" y="415" font-family="Arial" font-size="12" font-weight="bold" dominant-baseline="middle">8.90</text>
+  
+  <!-- HT Demucs (Ours) small -->
+  <rect x="80" y="440" width="349" height="20" fill="#34a853" rx="2" />
+  <text x="438" y="450" font-family="Arial" font-size="12" font-weight="bold" dominant-baseline="middle">8.49</text>
+  
+  <!-- HT Demucs (Ours, trained on 800 songs) -->
+  <rect x="80" y="475" width="364" height="20" fill="#34a853" rx="2" />
+  <text x="453" y="485" font-family="Arial" font-size="12" font-weight="bold" dominant-baseline="middle">8.80</text>
+  
+  <!-- HT Demucs (Fine-Tuned) -->
+  <rect x="80" y="510" width="380" height="20" fill="#34a853" rx="2" />
+  <text x="470" y="520" font-family="Arial" font-size="12" font-weight="bold" dominant-baseline="middle">9.00</text>
+  
+  <!-- Sparse HT Demucs (Fine-Tuned + Sparse Attention) -->
+  <rect x="80" y="545" width="409" height="20" fill="#34a853" rx="2" />
+  <circle cx="489" cy="555" r="7" fill="none" stroke="#e94235" stroke-width="2" />
+  <text x="509" y="555" font-family="Arial" font-size="12" font-weight="bold" dominant-baseline="middle">9.20</text>
+  
+  <!-- Key Insights -->
+  <rect x="535" y="180" width="320" height="120" fill="white" stroke="#ddd" rx="4" ry="4" />
+  <text x="550" y="200" font-family="Arial" font-size="14" font-weight="bold">Key Insights:</text>
+  <text x="550" y="225" font-family="Arial" font-size="12">• Sparse HT Demucs achieved best overall SDR (9.20)</text>
+  <text x="550" y="250" font-family="Arial" font-size="12">• Extra training data consistently improved performance</text>
+  <text x="550" y="275" font-family="Arial" font-size="12">• Fine-tuning + sparse attention yielded significant</text>
+  <text x="550" y="295" font-family="Arial" font-size="12">  improvement over baseline models</text>
+  
+  <!-- Component Performance -->
+  <rect x="535" y="310" width="320" height="180" fill="white" stroke="#ddd" rx="4" ry="4" />
+  <text x="550" y="330" font-family="Arial" font-size="14" font-weight="bold">Component Performance (Top 3 Models):</text>
+  
+  <!-- Drums -->
+  <text x="550" y="355" font-family="Arial" font-size="12" font-weight="bold">Drums:</text>
+  <text x="600" y="355" font-family="Arial" font-size="12">Sparse HT Demucs (10.83)</text>
+  <text x="600" y="375" font-family="Arial" font-size="12">HT Demucs Fine-Tuned (10.08)</text>
+  <text x="600" y="395" font-family="Arial" font-size="12">Band-Split RNN Latest (10.15)</text>
+  
+  <!-- Bass -->
+  <text x="550" y="420" font-family="Arial" font-size="12" font-weight="bold">Bass:</text>
+  <text x="600" y="420" font-family="Arial" font-size="12">Sparse HT Demucs (10.47)</text>
+  <text x="600" y="440" font-family="Arial" font-size="12">HT Demucs Fine-Tuned (10.39)</text>
+  <text x="600" y="460" font-family="Arial" font-size="12">HT Demucs 800 (9.78)</text>
+  
+  <!-- Vocals -->
+  <text x="550" y="485" font-family="Arial" font-size="12" font-weight="bold">Vocals:</text>
+  <text x="600" y="485" font-family="Arial" font-size="12">Band-Split RNN Latest (10.47)</text>
+  
+  <!-- Training Data Impact -->
+  <rect x="535" y="500" width="320" height="85" fill="white" stroke="#ddd" rx="4" ry="4" />
+  <text x="550" y="520" font-family="Arial" font-size="14" font-weight="bold">Training Data Impact:</text>
+  <text x="550" y="545" font-family="Arial" font-size="12">• Spleeter (25,000 songs): 5.91 SDR</text>
+  <text x="550" y="570" font-family="Arial" font-size="12">• Sparse HT Demucs (800 songs): 9.20 SDR</text>
+  
+  <!-- Y-axis Models label -->
+  <!-- <text x="35" y="350" font-family="Arial" font-size="16" font-weight="bold" transform="rotate(-90, 35, 350)">Models</text> -->
+</svg>

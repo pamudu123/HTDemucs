@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650">
+  <!-- Background -->
+  <rect width="1200" height="650" fill="#ffffff"/>
+  
+  <!-- Timeline -->
+  <line x1="100" y1="350" x2="1100" y2="350" stroke="#333" stroke-width="3"/>
+  
+  <!-- Timeline ticks -->
+  <line x1="150" y1="345" x2="150" y2="355" stroke="#333" stroke-width="2"/>
+  <line x1="310" y1="345" x2="310" y2="355" stroke="#333" stroke-width="2"/>
+  <line x1="470" y1="345" x2="470" y2="355" stroke="#333" stroke-width="2"/>
+  <line x1="630" y1="345" x2="630" y2="355" stroke="#333" stroke-width="2"/>
+  <line x1="790" y1="345" x2="790" y2="355" stroke="#333" stroke-width="2"/>
+  <line x1="950" y1="345" x2="950" y2="355" stroke="#333" stroke-width="2"/>
+  <line x1="1100" y1="345" x2="1100" y2="355" stroke="#333" stroke-width="2"/>
+  
+  <!-- Timeline labels -->
+  <!-- <text x="150" y="375" font-family="Arial" font-size="12" text-anchor="middle">2017</text>
+  <text x="310" y="375" font-family="Arial" font-size="12" text-anchor="middle">2018</text>
+  <text x="470" y="375" font-family="Arial" font-size="12" text-anchor="middle">2019</text>
+  <text x="630" y="375" font-family="Arial" font-size="12" text-anchor="middle">2020</text>
+  <text x="790" y="375" font-family="Arial" font-size="12" text-anchor="middle">2021</text>
+  <text x="950" y="375" font-family="Arial" font-size="12" text-anchor="middle">2022 (Nov)</text> -->
+  <!-- <text x="150" y="375" font-family="Arial" font-size="12" text-anchor="middle">2017</text>
+  <text x="310" y="375" font-family="Arial" font-size="12" text-anchor="middle">2018</text>
+  <text x="470" y="375" font-family="Arial" font-size="12" text-anchor="middle">2019</text>
+  <text x="630" y="375" font-family="Arial" font-size="12" text-anchor="middle">2020</text>
+  <text x="790" y="375" font-family="Arial" font-size="12" text-anchor="middle">2021</text>
+  <text x="950" y="375" font-family="Arial" font-size="12" text-anchor="middle">2022 (Nov)</text> -->
+  <!-- Title -->
+  <text x="600" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle">Music Source Separation Models Timeline</text>
+  
+  <!-- Legend -->
+  <rect x="100" y="100" width="20" height="20" fill="#88c9ff" rx="3" ry="3"/>
+  <text x="130" y="115" font-family="Arial" font-size="14">Spectrogram-based</text>
+
+  
+  <rect x="100" y="130" width="20" height="20" fill="#ff9e8f" rx="3" ry="3"/>
+  <text x="130" y="145" font-family="Arial" font-size="14">Waveform-based</text>
+  
+  <rect x="100" y="160" width="20" height="20" fill="#a0d6b1" rx="3" ry="3"/>
+  <text x="130" y="175" font-family="Arial" font-size="14">Hybrid approaches</text>
+  
+  <!-- Wave-U-Net (2018) -->
+  <rect x="240" y="230" width="150" height="80" fill="#ff9e8f" rx="5" ry="5" stroke="#333" stroke-width="1"/>
+  <text x="310" y="255" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Wave-U-Net</text>
+  <text x="310" y="275" font-family="Arial" font-size="10" text-anchor="middle">First waveform U-Net architecture</text>
+  <text x="310" y="290" font-family="Arial" font-size="10" text-anchor="middle">Used multi-resolution filters</text>
+  <line x1="310" y1="310" x2="310" y2="350" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- Open-Unmix (2019) -->
+  <rect x="400" y="150" width="150" height="80" fill="#88c9ff" rx="5" ry="5" stroke="#333" stroke-width="1"/>
+  <text x="470" y="175" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Open-Unmix</text>
+  <text x="470" y="195" font-family="Arial" font-size="10" text-anchor="middle">biLSTM with fully connected</text>
+  <text x="470" y="210" font-family="Arial" font-size="10" text-anchor="middle">Mask prediction on spectrogram</text>
+  <line x1="470" y1="230" x2="470" y2="350" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- Conv-TasNet (2019) -->
+  <rect x="400" y="230" width="150" height="80" fill="#ff9e8f" rx="5" ry="5" stroke="#333" stroke-width="1"/>
+  <text x="470" y="255" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Conv-TasNet</text>
+  <text x="470" y="275" font-family="Arial" font-size="10" text-anchor="middle">Residual dilated convolutions</text>
+  <text x="470" y="290" font-family="Arial" font-size="10" text-anchor="middle">Mask over learnt representation</text>
+  <line x1="470" y1="310" x2="470" y2="350" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- Spleeter (2019) -->
+  <rect x="560" y="150" width="150" height="80" fill="#88c9ff" rx="5" ry="5" stroke="#333" stroke-width="1"/>
+  <text x="630" y="175" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Spleeter</text>
+  <text x="630" y="195" font-family="Arial" font-size="10" text-anchor="middle">U-Net spectrogram architecture</text>
+  <text x="630" y="210" font-family="Arial" font-size="10" text-anchor="middle">25k songs, 5.91 dB SDR</text>
+  <line x1="630" y1="230" x2="630" y2="350" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- Demucs (2020) -->
+  <rect x="560" y="230" width="150" height="80" fill="#ff9e8f" rx="5" ry="5" stroke="#333" stroke-width="1"/>
+  <text x="630" y="255" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Demucs</text>
+  <text x="630" y="275" font-family="Arial" font-size="10" text-anchor="middle">Time domain U-Net architecture</text>
+  <text x="630" y="290" font-family="Arial" font-size="10" text-anchor="middle">bi-LSTM between encoder/decoder</text>
+  <line x1="630" y1="310" x2="630" y2="350" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- D3Net (2020) -->
+  <rect x="720" y="150" width="150" height="80" fill="#88c9ff" rx="5" ry="5" stroke="#333" stroke-width="1"/>
+  <text x="790" y="175" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">D3Net</text>
+  <text x="790" y="195" font-family="Arial" font-size="10" text-anchor="middle">Dilated conv blocks with</text>
+  <text x="790" y="210" font-family="Arial" font-size="10" text-anchor="middle">dense connections, 6.68 dB SDR</text>
+  <line x1="790" y1="230" x2="790" y2="350" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- Demucs v2 (2020) -->
+  <rect x="720" y="230" width="150" height="80" fill="#ff9e8f" rx="5" ry="5" stroke="#333" stroke-width="1"/>
+  <text x="790" y="255" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Demucs v2</text>
+  <text x="790" y="275" font-family="Arial" font-size="10" text-anchor="middle">Improved with 150 extra songs</text>
+  <text x="790" y="290" font-family="Arial" font-size="10" text-anchor="middle">6.79 dB SDR performance</text>
+  <line x1="790" y1="310" x2="790" y2="350" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- Complex Spectrogram (2021) -->
+  <rect x="880" y="150" width="150" height="80" fill="#88c9ff" rx="5" ry="5" stroke="#333" stroke-width="1"/>
+  <text x="950" y="175" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Complex Spectrogram</text>
+  <text x="950" y="195" font-family="Arial" font-size="10" text-anchor="middle">Richer representation</text>
+  <text x="950" y="210" font-family="Arial" font-size="10" text-anchor="middle">Removes Ideal-Ratio-Mask limit</text>
+  <line x1="950" y1="230" x2="950" y2="350" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- HybridDemucs (2022) -->
+  <rect x="880" y="230" width="150" height="80" fill="#a0d6b1" rx="5" ry="5" stroke="#333" stroke-width="1"/>
+  <text x="950" y="255" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">HybridDemucs</text>
+  <text x="950" y="275" font-family="Arial" font-size="10" text-anchor="middle">Bi-U-Net with shared backbone</text>
+  <text x="950" y="290" font-family="Arial" font-size="10" text-anchor="middle">8.34 dB SDR (with 800 songs)</text>
+  <line x1="950" y1="310" x2="950" y2="350" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- KUIELAB-MDX-Net (2022) -->
+  <rect x="240" y="430" width="150" height="80" fill="#a0d6b1" rx="5" ry="5" stroke="#333" stroke-width="1"/>
+  <text x="310" y="455" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">KUIELAB-MDX-Net</text>
+  <text x="310" y="475" font-family="Arial" font-size="10" text-anchor="middle">Model blending approach</text>
+  <text x="310" y="490" font-family="Arial" font-size="10" text-anchor="middle">7.54 dB SDR performance</text>
+  <line x1="310" y1="430" x2="310" y2="350" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- Band-Split RNN (2022) -->
+  <rect x="400" y="430" width="150" height="80" fill="#88c9ff" rx="5" ry="5" stroke="#333" stroke-width="1"/>
+  <text x="470" y="455" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Band-Split RNN</text>
+  <text x="470" y="475" font-family="Arial" font-size="10" text-anchor="middle">Multiple dual-path RNNs</text>
+  <text x="470" y="490" font-family="Arial" font-size="10" text-anchor="middle">8.97 dB SDR with 1750 songs</text>
+  <line x1="470" y1="430" x2="470" y2="350" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- HTDemucs (2022) -->
+  <rect x="560" y="430" width="150" height="80" fill="#a0d6b1" rx="5" ry="5" stroke="#333" stroke-width="1"/>
+  <text x="630" y="455" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">HTDemucs</text>
+  <text x="630" y="475" font-family="Arial" font-size="10" text-anchor="middle">8.80 dB SDR (800 extra songs)</text>
+  <text x="630" y="490" font-family="Arial" font-size="10" text-anchor="middle">9.00 dB SDR (with fine-tuning)</text>
+  <line x1="630" y1="430" x2="630" y2="350" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- Sparse HTDemucs (2022) -->
+  <rect x="720" y="430" width="150" height="80" fill="#a0d6b1" rx="5" ry="5" stroke="#333" stroke-width="1"/>
+  <text x="790" y="455" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">SparseHTDemucs</text>
+  <text x="790" y="475" font-family="Arial" font-size="10" text-anchor="middle">9.20 dB SDR (fine-tuned)</text>
+  <text x="790" y="490" font-family="Arial" font-size="10" text-anchor="middle">Best drums/bass performance</text>
+  <line x1="790" y1="430" x2="790" y2="350" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- SepFormer (2022) -->
+  <rect x="880" y="430" width="150" height="80" fill="#88c9ff" rx="5" ry="5" stroke="#333" stroke-width="1"/>
+  <text x="950" y="455" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">SepFormer</text>
+  <text x="950" y="475" font-family="Arial" font-size="10" text-anchor="middle">Transformer for speech separation</text>
+  <text x="950" y="490" font-family="Arial" font-size="10" text-anchor="middle">High memory req. (11GB for 5s)</text>
+  <line x1="955" y1="430" x2="950" y2="350" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- Domain labels
+
+  <text x="100" y="180" font-family="Arial" font-size="16" font-weight="bold">Spectrogram Domain</text>
+  <text x="100" y="260" font-family="Arial" font-size="16" font-weight="bold">Waveform Domain</text>
+  <text x="100" y="460" font-family="Arial" font-size="16" font-weight="bold">Models from 2022</text> -->
+  
+  <!-- Performance information -->
+  <text x="100" y="560" font-family="Arial" font-size="16" font-weight="bold">Performance Metrics</text>
+  <text x="100" y="580" font-family="Arial" font-size="12">SDR = Signal-to-Distortion Ratio (Higher is better)</text>
+  <text x="100" y="600" font-family="Arial" font-size="12">MUSDB: Standard dataset for MSS evaluation</text>
+  <!-- <text x="100" y="620" font-family="Arial" font-size="12">Extra songs: Additional training data beyond MUSDB</text> -->
+</svg>

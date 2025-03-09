@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <!-- Background -->
+  <rect width="800" height="800" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Hybrid Transformer Demucs Architecture</text>
+  
+  <!-- Input -->
+  <rect x="365" y="60" width="70" height="30" rx="5" ry="5" fill="#e9ecef" stroke="#495057"/>
+  <text x="400" y="80" font-family="Arial" font-size="12" text-anchor="middle">Input Audio</text>
+  
+  <!-- Branches -->
+  <line x1="400" y1="90" x2="400" y2="110" stroke="#495057" stroke-width="2"/>
+  <line x1="400" y1="110" x2="250" y2="110" stroke="#495057" stroke-width="2"/>
+  <line x1="400" y1="110" x2="550" y2="110" stroke="#495057" stroke-width="2"/>
+  
+  <!-- Time Domain Branch Label -->
+  <text x="250" y="100" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#198754">Time Domain</text>
+  
+  <!-- Spectral Domain Branch Label -->
+  <text x="550" y="100" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#0d6efd">Spectral Domain</text>
+  <text x="550" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="#0d6efd">(STFT)</text>
+  
+  <!-- Time Domain Encoder -->
+  <rect x="220" y="130" width="60" height="25" rx="5" ry="5" fill="#d1e7dd" stroke="#198754"/>
+  <text x="250" y="146" font-family="Arial" font-size="10" text-anchor="middle">Encoder L1</text>
+  
+  <rect x="210" y="170" width="80" height="25" rx="5" ry="5" fill="#d1e7dd" stroke="#198754"/>
+  <text x="250" y="186" font-family="Arial" font-size="10" text-anchor="middle">Encoder L2</text>
+  
+  <rect x="200" y="210" width="100" height="25" rx="5" ry="5" fill="#d1e7dd" stroke="#198754"/>
+  <text x="250" y="226" font-family="Arial" font-size="10" text-anchor="middle">Encoder L3</text>
+  
+  <rect x="190" y="250" width="120" height="25" rx="5" ry="5" fill="#d1e7dd" stroke="#198754"/>
+  <text x="250" y="266" font-family="Arial" font-size="10" text-anchor="middle">Encoder L4</text>
+  
+  <rect x="180" y="290" width="140" height="25" rx="5" ry="5" fill="#d1e7dd" stroke="#198754"/>
+  <text x="250" y="306" font-family="Arial" font-size="10" text-anchor="middle">Encoder L5</text>
+  
+  <!-- Spectral Domain Encoder -->
+  <rect x="520" y="130" width="60" height="25" rx="5" ry="5" fill="#cfe2ff" stroke="#0d6efd"/>
+  <text x="550" y="146" font-family="Arial" font-size="10" text-anchor="middle">Encoder L1</text>
+  
+  <rect x="510" y="170" width="80" height="25" rx="5" ry="5" fill="#cfe2ff" stroke="#0d6efd"/>
+  <text x="550" y="186" font-family="Arial" font-size="10" text-anchor="middle">Encoder L2</text>
+  
+  <rect x="500" y="210" width="100" height="25" rx="5" ry="5" fill="#cfe2ff" stroke="#0d6efd"/>
+  <text x="550" y="226" font-family="Arial" font-size="10" text-anchor="middle">Encoder L3</text>
+  
+  <rect x="490" y="250" width="120" height="25" rx="5" ry="5" fill="#cfe2ff" stroke="#0d6efd"/>
+  <text x="550" y="266" font-family="Arial" font-size="10" text-anchor="middle">Encoder L4</text>
+  
+  <rect x="480" y="290" width="140" height="25" rx="5" ry="5" fill="#cfe2ff" stroke="#0d6efd"/>
+  <text x="550" y="306" font-family="Arial" font-size="10" text-anchor="middle">Encoder L5</text>
+  
+  <!-- Connection lines -->
+  <line x1="250" y1="110" x2="250" y2="130" stroke="#198754" stroke-width="2"/>
+  <line x1="250" y1="155" x2="250" y2="170" stroke="#198754" stroke-width="2"/>
+  <line x1="250" y1="195" x2="250" y2="210" stroke="#198754" stroke-width="2"/>
+  <line x1="250" y1="235" x2="250" y2="250" stroke="#198754" stroke-width="2"/>
+  <line x1="250" y1="275" x2="250" y2="290" stroke="#198754" stroke-width="2"/>
+  
+  <line x1="550" y1="110" x2="550" y2="130" stroke="#0d6efd" stroke-width="2"/>
+  <line x1="550" y1="155" x2="550" y2="170" stroke="#0d6efd" stroke-width="2"/>
+  <line x1="550" y1="195" x2="550" y2="210" stroke="#0d6efd" stroke-width="2"/>
+  <line x1="550" y1="235" x2="550" y2="250" stroke="#0d6efd" stroke-width="2"/>
+  <line x1="550" y1="275" x2="550" y2="290" stroke="#0d6efd" stroke-width="2"/>
+  
+  <!-- Sum node -->
+  <line x1="250" y1="315" x2="250" y2="330" stroke="#198754" stroke-width="2"/>
+  <line x1="250" y1="330" x2="400" y2="330" stroke="#198754" stroke-width="2"/>
+  <line x1="550" y1="315" x2="550" y2="330" stroke="#0d6efd" stroke-width="2"/>
+  <line x1="550" y1="330" x2="400" y2="330" stroke="#0d6efd" stroke-width="2"/>
+  
+  <circle cx="400" cy="330" r="15" fill="#fff3cd" stroke="#ffc107" stroke-width="2"/>
+  <text x="400" y="334" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">+</text>
+  
+  <!-- Shared layer -->
+  <rect x="350" y="350" width="100" height="30" rx="5" ry="5" fill="#fff3cd" stroke="#ffc107"/>
+  <text x="400" y="366" font-family="Arial" font-size="10" text-anchor="middle">Shared Layer 6</text>
+  <text x="400" y="376" font-family="Arial" font-size="8" text-anchor="middle">(Bottleneck)</text>
+  
+  <line x1="400" y1="345" x2="400" y2="350" stroke="#ffc107" stroke-width="2"/>
+  
+  <!-- Shared decoder -->
+  <rect x="350" y="390" width="100" height="25" rx="5" ry="5" fill="#fff3cd" stroke="#ffc107"/>
+  <text x="400" y="406" font-family="Arial" font-size="10" text-anchor="middle">Shared Decoder L1</text>
+  
+  <line x1="400" y1="380" x2="400" y2="390" stroke="#ffc107" stroke-width="2"/>
+  <line x1="400" y1="415" x2="400" y2="425" stroke="#ffc107" stroke-width="2"/>
+  <line x1="400" y1="425" x2="250" y2="425" stroke="#ffc107" stroke-width="2"/>
+  <line x1="400" y1="425" x2="550" y2="425" stroke="#ffc107" stroke-width="2"/>
+  
+  <!-- Time Domain Decoder Blocks -->
+  <rect x="190" y="435" width="120" height="25" rx="5" ry="5" fill="#d1e7dd" stroke="#198754"/>
+  <text x="250" y="451" font-family="Arial" font-size="10" text-anchor="middle">Decoder L2</text>
+  
+  <rect x="190" y="470" width="120" height="25" rx="5" ry="5" fill="#d1e7dd" stroke="#198754"/>
+  <text x="250" y="486" font-family="Arial" font-size="10" text-anchor="middle">Decoder L3</text>
+  
+  <rect x="190" y="505" width="120" height="25" rx="5" ry="5" fill="#d1e7dd" stroke="#198754"/>
+  <text x="250" y="521" font-family="Arial" font-size="10" text-anchor="middle">Decoder L4</text>
+  
+  <rect x="190" y="540" width="120" height="25" rx="5" ry="5" fill="#d1e7dd" stroke="#198754"/>
+  <text x="250" y="556" font-family="Arial" font-size="10" text-anchor="middle">Decoder L5</text>
+  
+  <!-- Spectral Domain Decoder Blocks -->
+  <rect x="490" y="435" width="120" height="25" rx="5" ry="5" fill="#cfe2ff" stroke="#0d6efd"/>
+  <text x="550" y="451" font-family="Arial" font-size="10" text-anchor="middle">Decoder L2</text>
+  
+  <rect x="490" y="470" width="120" height="25" rx="5" ry="5" fill="#cfe2ff" stroke="#0d6efd"/>
+  <text x="550" y="486" font-family="Arial" font-size="10" text-anchor="middle">Decoder L3</text>
+  
+  <rect x="490" y="505" width="120" height="25" rx="5" ry="5" fill="#cfe2ff" stroke="#0d6efd"/>
+  <text x="550" y="521" font-family="Arial" font-size="10" text-anchor="middle">Decoder L4</text>
+  
+  <rect x="490" y="540" width="120" height="25" rx="5" ry="5" fill="#cfe2ff" stroke="#0d6efd"/>
+  <text x="550" y="556" font-family="Arial" font-size="10" text-anchor="middle">Decoder L5</text>
+  
+  <!-- Connection lines for decoders -->
+  <line x1="250" y1="425" x2="250" y2="435" stroke="#198754" stroke-width="2"/>
+  <line x1="250" y1="460" x2="250" y2="470" stroke="#198754" stroke-width="2"/>
+  <line x1="250" y1="495" x2="250" y2="505" stroke="#198754" stroke-width="2"/>
+  <line x1="250" y1="530" x2="250" y2="540" stroke="#198754" stroke-width="2"/>
+  
+  <line x1="550" y1="425" x2="550" y2="435" stroke="#0d6efd" stroke-width="2"/>
+  <line x1="550" y1="460" x2="550" y2="470" stroke="#0d6efd" stroke-width="2"/>
+  <line x1="550" y1="495" x2="550" y2="505" stroke="#0d6efd" stroke-width="2"/>
+  <line x1="550" y1="530" x2="550" y2="540" stroke="#0d6efd" stroke-width="2"/>
+  
+  <!-- Skip connections for Time Domain -->
+  <path d="M 220 142 L 160 142 L 160 443 L 190 443" stroke="#198754" stroke-width="1" stroke-dasharray="5,5" fill="none"/>
+  <path d="M 210 182 L 150 182 L 150 478 L 190 478" stroke="#198754" stroke-width="1" stroke-dasharray="5,5" fill="none"/>
+  <path d="M 200 222 L 140 222 L 140 513 L 190 513" stroke="#198754" stroke-width="1" stroke-dasharray="5,5" fill="none"/>
+  <path d="M 190 262 L 130 262 L 130 548 L 190 548" stroke="#198754" stroke-width="1" stroke-dasharray="5,5" fill="none"/>
+  
+  <!-- Skip connections for Spectral Domain -->
+  <path d="M 580 142 L 640 142 L 640 443 L 610 443" stroke="#0d6efd" stroke-width="1" stroke-dasharray="5,5" fill="none"/>
+  <path d="M 590 182 L 650 182 L 650 478 L 610 478" stroke="#0d6efd" stroke-width="1" stroke-dasharray="5,5" fill="none"/>
+  <path d="M 600 222 L 660 222 L 660 513 L 610 513" stroke="#0d6efd" stroke-width="1" stroke-dasharray="5,5" fill="none"/>
+  <path d="M 610 262 L 670 262 L 670 548 L 610 548" stroke="#0d6efd" stroke-width="1" stroke-dasharray="5,5" fill="none"/>
+  
+  <!-- Final outputs -->
+  <rect x="220" y="585" width="60" height="20" rx="5" ry="5" fill="#d1e7dd" stroke="#198754"/>
+  <text x="250" y="599" font-family="Arial" font-size="10" text-anchor="middle">Time Output</text>
+  
+  <rect x="490" y="585" width="60" height="20" rx="5" ry="5" fill="#cfe2ff" stroke="#0d6efd"/>
+  <text x="520" y="599" font-family="Arial" font-size="10" text-anchor="middle">Spectral Out</text>
+  
+  <rect x="560" y="585" width="60" height="20" rx="5" ry="5" fill="#cfe2ff" stroke="#0d6efd"/>
+  <text x="590" y="599" font-family="Arial" font-size="10" text-anchor="middle">iSTFT</text>
+  
+  <line x1="250" y1="565" x2="250" y2="585" stroke="#198754" stroke-width="2"/>
+  <line x1="550" y1="565" x2="520" y2="585" stroke="#0d6efd" stroke-width="2"/>
+  <line x1="550" y1="595" x2="560" y2="595" stroke="#0d6efd" stroke-width="2"/>
+  
+  <!-- Final sum -->
+  <line x1="250" y1="605" x2="250" y2="625" stroke="#198754" stroke-width="2"/>
+  <line x1="250" y1="625" x2="400" y2="625" stroke="#198754" stroke-width="2"/>
+  <line x1="620" y1="595" x2="650" y2="595" stroke="#0d6efd" stroke-width="2"/>
+  <line x1="650" y1="595" x2="650" y2="625" stroke="#0d6efd" stroke-width="2"/>
+  <line x1="650" y1="625" x2="400" y2="625" stroke="#0d6efd" stroke-width="2"/>
+  
+  <circle cx="400" cy="625" r="15" fill="#fff3cd" stroke="#ffc107" stroke-width="2"/>
+  <text x="400" y="629" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">+</text>
+  
+  <!-- Final Output -->
+  <rect x="350" y="650" width="100" height="30" rx="5" ry="5" fill="#e9ecef" stroke="#495057"/>
+  <text x="400" y="670" font-family="Arial" font-size="12" text-anchor="middle">Final Audio Output</text>
+  
+  <line x1="400" y1="640" x2="400" y2="650" stroke="#495057" stroke-width="2"/>
+  
+  <!-- Legend -->
+  <rect x="680" y="180" width="120" height="120" rx="5" ry="5" fill="white" stroke="#495057"/>
+  <text x="740" y="200" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <rect x="690" y="210" width="15" height="15" fill="#d1e7dd" stroke="#198754"/>
+  <text x="715" y="222" font-family="Arial" font-size="10" text-anchor="start">Time Domain</text>
+  
+  <rect x="690" y="235" width="15" height="15" fill="#cfe2ff" stroke="#0d6efd"/>
+  <text x="715" y="247" font-family="Arial" font-size="10" text-anchor="start">Spectral Domain</text>
+  
+  <rect x="690" y="260" width="15" height="15" fill="#fff3cd" stroke="#ffc107"/>
+  <text x="715" y="272" font-family="Arial" font-size="10" text-anchor="start">Shared Layers</text>
+  
+  <line x1="690" y1="285" x2="685" y2="285" stroke="#495057" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="715" y="288" font-family="Arial" font-size="10" text-anchor="start">Skip Connections</text>
+  
+  <!-- <circle cx="692" cy="305" r="7" fill="#fff3cd" stroke="#ffc107" stroke-width="2"/> -->
+  <!-- <text x="692" y="308" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">+</text> -->
+  <!-- <text x="710" y="308" font-family="Arial" font-size="10" text-anchor="start">Sum Operation</text> -->
+</svg>

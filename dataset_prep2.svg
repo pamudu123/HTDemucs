@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <!-- Background -->
+  <rect width="900" height="600" fill="#ffffff" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <!-- <text x="450" y="40" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#333">Quality Matrix Visualization for Source Separation</text> -->
+  
+  <!-- Matrix Definition Section -->
+  <rect x="50" y="70" width="360" height="180" rx="5" ry="5" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+  <text x="240" y="100" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#0d47a1">Quality Matrix Definition</text>
+  <text x="240" y="130" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">P₍ᵢⱼ₎: Proportion of segments where</text>
+  <text x="240" y="155" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">V(y₍ᵢⱼ₎) - V(x₍ᵢ₎) > 10 dB</text>
+  <text x="240" y="185" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">where y₍ᵢⱼ₎ = f(x₍ᵢ₎)ⱼ</text>
+  <text x="240" y="215" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">V(z) = 10log₁₀(AveragePool(z²))</text>
+  
+  <!-- Ideal Matrix Section -->
+  <rect x="425" y="70" width="320" height="240" rx="5" ry="5" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
+  <text x="580" y="60" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1b5e20">Ideal Matrix (Perfect Separation)</text>
+  
+  <!-- Ideal Matrix -->
+  <g transform="translate(580, 155)">
+    <!-- Column Headers -->
+    <text x="-70" y="-65" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">vocals</text>
+    <text x="-20" y="-65" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">drums</text>
+    <text x="30" y="-65" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">bass</text>
+    <text x="80" y="-65" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">other</text>
+    
+    <!-- Row Headers -->
+    <text x="-115" y="-30" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#333">vocals</text>
+    <text x="-115" y="20" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#333">drums</text>
+    <text x="-115" y="70" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#333">bass</text>
+    <text x="-115" y="120" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#333">other</text>
+    
+    <!-- Matrix Cells Row 1 -->
+    <rect x="-90" y="-50" width="40" height="40" fill="#4caf50" opacity="0.9"/>
+    <rect x="-40" y="-50" width="40" height="40" fill="#f5f5f5" stroke="#ddd"/>
+    <rect x="10" y="-50" width="40" height="40" fill="#f5f5f5" stroke="#ddd"/>
+    <rect x="60" y="-50" width="40" height="40" fill="#f5f5f5" stroke="#ddd"/>
+    
+    <!-- Matrix Cells Row 2 -->
+    <rect x="-90" y="0" width="40" height="40" fill="#f5f5f5" stroke="#ddd"/>
+    <rect x="-40" y="0" width="40" height="40" fill="#4caf50" opacity="0.9"/>
+    <rect x="10" y="0" width="40" height="40" fill="#f5f5f5" stroke="#ddd"/>
+    <rect x="60" y="0" width="40" height="40" fill="#f5f5f5" stroke="#ddd"/>
+    
+    <!-- Matrix Cells Row 3 -->
+    <rect x="-90" y="50" width="40" height="40" fill="#f5f5f5" stroke="#ddd"/>
+    <rect x="-40" y="50" width="40" height="40" fill="#f5f5f5" stroke="#ddd"/>
+    <rect x="10" y="50" width="40" height="40" fill="#4caf50" opacity="0.9"/>
+    <rect x="60" y="50" width="40" height="40" fill="#f5f5f5" stroke="#ddd"/>
+    
+    <!-- Matrix Cells Row 4 -->
+    <rect x="-90" y="100" width="40" height="40" fill="#f5f5f5" stroke="#ddd"/>
+    <rect x="-40" y="100" width="40" height="40" fill="#f5f5f5" stroke="#ddd"/>
+    <rect x="10" y="100" width="40" height="40" fill="#f5f5f5" stroke="#ddd"/>
+    <rect x="60" y="100" width="40" height="40" fill="#4caf50" opacity="0.9"/>
+    
+    <!-- Values - Diagonal -->
+    <text x="-70" y="-30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">100%</text>
+    <text x="-20" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">100%</text>
+    <text x="30" y="70" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">100%</text>
+    <text x="80" y="120" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">100%</text>
+    
+    <!-- Values - Other cells -->
+    <text x="-70" y="20" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">0%</text>
+    <text x="-70" y="70" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">0%</text>
+    <text x="-70" y="120" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">0%</text>
+    
+    <text x="-20" y="-30" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">0%</text>
+    <text x="-20" y="70" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">0%</text>
+    <text x="-20" y="120" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">0%</text>
+    
+    <text x="30" y="-30" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">0%</text>
+    <text x="30" y="20" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">0%</text>
+    <text x="30" y="120" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">0%</text>
+    
+    <text x="80" y="-30" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">0%</text>
+    <text x="80" y="20" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">0%</text>
+    <text x="80" y="70" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">0%</text>
+  </g>
+  
+  <!-- Filtering Criteria Section -->
+  <rect x="50" y="320" width="800" height="240" rx="5" ry="5" fill="#fff3e0" stroke="#ff9800" stroke-width="2"/>
+  <!-- <text x="450" y="310" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#e65100">Quality Matrix Filtering Criteria</text> -->
+  
+  <!-- Acceptable Matrix Example -->
+  <g transform="translate(200, 400)">
+    <!-- Labels -->
+    <text x="0" y="-60" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Acceptable Matrix</text>
+    <text x="0" y="155" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Retained: Pᵢᵢ > 70%, Pᵢⱼ < 30%</text>
+    
+    <!-- Matrix Cells Row 1 -->
+    <rect x="-90" y="-50" width="40" height="40" fill="#4caf50" opacity="0.9"/>
+    <rect x="-40" y="-50" width="40" height="40" fill="#ffcdd2" opacity="0.3"/>
+    <rect x="10" y="-50" width="40" height="40" fill="#ffcdd2" opacity="0.3"/>
+    <rect x="60" y="-50" width="40" height="40" fill="#ffcdd2" opacity="0.3"/>
+    
+    <!-- Matrix Cells Row 2 -->
+    <rect x="-90" y="0" width="40" height="40" fill="#ffcdd2" opacity="0.3"/>
+    <rect x="-40" y="0" width="40" height="40" fill="#4caf50" opacity="0.9"/>
+    <rect x="10" y="0" width="40" height="40" fill="#ffcdd2" opacity="0.3"/>
+    <rect x="60" y="0" width="40" height="40" fill="#ffcdd2" opacity="0.3"/>
+    
+    <!-- Matrix Cells Row 3 -->
+    <rect x="-90" y="50" width="40" height="40" fill="#ffcdd2" opacity="0.3"/>
+    <rect x="-40" y="50" width="40" height="40" fill="#ffcdd2" opacity="0.3"/>
+    <rect x="10" y="50" width="40" height="40" fill="#4caf50" opacity="0.9"/>
+    <rect x="60" y="50" width="40" height="40" fill="#ffcdd2" opacity="0.3"/>
+    
+    <!-- Matrix Cells Row 4 -->
+    <rect x="-90" y="100" width="40" height="40" fill="#ffcdd2" opacity="0.3"/>
+    <rect x="-40" y="100" width="40" height="40" fill="#ffcdd2" opacity="0.3"/>
+    <rect x="10" y="100" width="40" height="40" fill="#ffcdd2" opacity="0.3"/>
+    <rect x="60" y="100" width="40" height="40" fill="#4caf50" opacity="0.9"/>
+    
+    <!-- Values - Diagonal -->
+    <text x="-70" y="-30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">78%</text>
+    <text x="-20" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">75%</text>
+    <text x="30" y="70" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">82%</text>
+    <text x="80" y="120" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">71%</text>
+    
+    <!-- Values - Other cells -->
+    <text x="-70" y="20" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">18%</text>
+    <text x="-70" y="70" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">15%</text>
+    <text x="-70" y="120" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">22%</text>
+    
+    <text x="-20" y="-30" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">24%</text>
+    <text x="-20" y="70" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">17%</text>
+    <text x="-20" y="120" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">26%</text>
+    
+    <text x="30" y="-30" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">12%</text>
+    <text x="30" y="20" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">19%</text>
+    <text x="30" y="120" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">14%</text>
+    
+    <text x="80" y="-30" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">25%</text>
+    <text x="80" y="20" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">28%</text>
+    <text x="80" y="70" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">21%</text>
+  </g>
+  
+  <!-- Rejected Matrix Example -->
+  <g transform="translate(650, 400)">
+    <!-- Labels -->
+    <text x="0" y="-60" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Rejected Matrix</text>
+    <text x="0" y="155" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Rejected: Some Pᵢᵢ < 70% or some Pᵢⱼ > 30%</text>
+    
+    <!-- Matrix Cells Row 1 -->
+    <rect x="-90" y="-50" width="40" height="40" fill="#4caf50" opacity="0.9"/>
+    <rect x="-40" y="-50" width="40" height="40" fill="#ffcdd2" opacity="0.3"/>
+    <rect x="10" y="-50" width="40" height="40" fill="#ffcdd2" opacity="0.3"/>
+    <rect x="60" y="-50" width="40" height="40" fill="#f44336" opacity="0.7"/>
+    
+    <!-- Matrix Cells Row 2 -->
+    <rect x="-90" y="0" width="40" height="40" fill="#ffcdd2" opacity="0.3"/>
+    <rect x="-40" y="0" width="40" height="40" fill="#f44336" opacity="0.7"/>
+    <rect x="10" y="0" width="40" height="40" fill="#ffcdd2" opacity="0.3"/>
+    <rect x="60" y="0" width="40" height="40" fill="#ffcdd2" opacity="0.3"/>
+    
+    <!-- Matrix Cells Row 3 -->
+    <rect x="-90" y="50" width="40" height="40" fill="#ffcdd2" opacity="0.3"/>
+    <rect x="-40" y="50" width="40" height="40" fill="#ffcdd2" opacity="0.3"/>
+    <rect x="10" y="50" width="40" height="40" fill="#4caf50" opacity="0.9"/>
+    <rect x="60" y="50" width="40" height="40" fill="#ffcdd2" opacity="0.3"/>
+    
+    <!-- Matrix Cells Row 4 -->
+    <rect x="-90" y="100" width="40" height="40" fill="#f44336" opacity="0.7"/>
+    <rect x="-40" y="100" width="40" height="40" fill="#ffcdd2" opacity="0.3"/>
+    <rect x="10" y="100" width="40" height="40" fill="#ffcdd2" opacity="0.3"/>
+    <rect x="60" y="100" width="40" height="40" fill="#f44336" opacity="0.7"/>
+    
+    <!-- Values - Diagonal -->
+    <text x="-70" y="-30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">75%</text>
+    <text x="-20" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">62%</text>
+    <text x="30" y="70" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">80%</text>
+    <text x="80" y="120" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">58%</text>
+    
+    <!-- Values - Problem areas highlighted -->
+    <text x="-70" y="20" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">25%</text>
+    <text x="-70" y="70" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">18%</text>
+    <text x="-70" y="120" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">38%</text>
+    
+    <text x="-20" y="-30" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">22%</text>
+    <text x="-20" y="70" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">29%</text>
+    <text x="-20" y="120" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">26%</text>
+    
+    <text x="30" y="-30" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">15%</text>
+    <text x="30" y="20" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">20%</text>
+    <text x="30" y="120" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">22%</text>
+    
+    <text x="80" y="-30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">42%</text>
+    <text x="80" y="20" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">27%</text>
+    <text x="80" y="70" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">19%</text>
+  </g>
+</svg>
