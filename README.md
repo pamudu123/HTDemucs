@@ -21,7 +21,7 @@ Implementation Tutorial: [PyTorch Audio - Hybrid Demucs Tutorial](https://pytorc
 `I would appreciate it if you acknowledged my hard work when using my material.`
 
 
-![Slide 1](presentation%20slides/Slide1.png)
+![Slide 1](HTDemucs/presentation%20slides/Slide1.png)
 ![Slide 2](presentation%20slides/Slide2.png)
 ![Slide 3](presentation%20slides/Slide3.png)
 ![Slide 4](presentation%20slides/Slide4.png)
